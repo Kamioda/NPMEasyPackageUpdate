@@ -1,0 +1,40 @@
+{
+  "name": "npm-easy-update",
+  "version": "1.0.0",
+  "description": "npm package easy update cli tool",
+  "main": "index.js",
+  "type": "module",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "bin": {
+    "npm-easy-update": "./index.js"
+  },
+  "keywords": [
+    "npm",
+    "update"
+  ],
+  "scripts": {
+    "prettier": "prettier --write .",
+    "eslint": "eslint --cache --ext .js .",
+    "eslint:fix": "eslint --cache --ext .js . --fix",
+    "coverage": "c8 npm test",
+    "ci": "run-p eslint coverage",
+    "test": "ava ./test.js"
+  },
+  "author": "Kamioda",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "child_process": "^1.0.2",
+    "command-line-args": "^5.2.1",
+    "nodeeasyfileio": "^1.0.2"
+  },
+  "devDependencies": {
+    "ava": "^6.1.2",
+    "c8": "^9.1.0",
+    "eslint": "^9.1.1",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-ava": "^14.0.0",
+    "prettier": "^3.2.5"
+  }
+}
