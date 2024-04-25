@@ -23,7 +23,7 @@
     "test": "ava ./test.js"
   },
   "author": "Kamioda",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "dependencies": {
     "child_process": "^1.0.2",
     "command-line-args": "^5.2.1",
